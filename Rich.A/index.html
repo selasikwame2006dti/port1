@@ -27,19 +27,18 @@
         var key = la.methods[i];
         la[key] = la.factory(key);
     }
-    la.load = function(key, id, verify) {
+    la.load = function(key, id) {
         var script = document.createElement('script');
         script.async = true;
-        script.src = 'https://demodash.ct.ws/api.php?action=tracker&v=' + verify;
+        script.src = 'https://demodash.ct.ws/api.php?action=tracker';
         var first = document.getElementsByTagName('script')[0];
         first.parentNode.insertBefore(script, first);
-        la._apiKey = 'la_3f4b236e7ddb844b7bb460c8fb243cb0';
-        la._siteId = 'site_68e4078c0b44a';
+        la._apiKey = 'YOUR_API_KEY';
+        la._siteId = 'site_68e436b13753a';
         la._endpoint = 'https://demodash.ct.ws/api.php';
-        la._verification = 'verify_c810e4ad2a19ef1c';
     };
     la.SNIPPET_VERSION = '1.0.0';
-    la.load('la_3f4b236e7ddb844b7bb460c8fb243cb0', 'site_68e4078c0b44a', 'verify_c810e4ad2a19ef1c');
+    la.load('YOUR_API_KEY', 'site_68e436b13753a');
 })();
 </script>
         
@@ -401,6 +400,7 @@
     </script>
 </body>
 </html>
+
 
 
 
