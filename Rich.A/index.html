@@ -9,7 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <!-- Lumora Analytics -->
+   
+<!-- Lumora Analytics -->
 <script>
 (function() {
     var la = window.la = window.la || [];
@@ -26,19 +27,22 @@
         var key = la.methods[i];
         la[key] = la.factory(key);
     }
-    la.load = function(key, id) {
+    la.load = function(key, id, verify) {
         var script = document.createElement('script');
         script.async = true;
-        script.src = '//yourdomain.com/api.php?action=tracker';
+        script.src = 'https://demodash.ct.ws/api.php?action=tracker&v=' + verify;
         var first = document.getElementsByTagName('script')[0];
         first.parentNode.insertBefore(script, first);
-        la._apiKey = '68e4025a9006debefe13002ea2dea67c80e7c5366d20e';
-        la._siteId = 'site_68e4025a9006b';
+        la._apiKey = 'la_3f4b236e7ddb844b7bb460c8fb243cb0';
+        la._siteId = 'site_68e4078c0b44a';
+        la._endpoint = 'https://demodash.ct.ws/api.php';
+        la._verification = 'verify_c810e4ad2a19ef1c';
     };
     la.SNIPPET_VERSION = '1.0.0';
-    la.load('68e4025a9006debefe13002ea2dea67c80e7c5366d20e', 'site_68e4025a9006b');
+    la.load('la_3f4b236e7ddb844b7bb460c8fb243cb0', 'site_68e4078c0b44a', 'verify_c810e4ad2a19ef1c');
 })();
 </script>
+        
   </head>
 <body>
 
@@ -397,6 +401,7 @@
     </script>
 </body>
 </html>
+
 
 
 
