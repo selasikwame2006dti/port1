@@ -12,35 +12,11 @@
    
 <!-- Lumora Analytics -->
 <script>
-(function() {
-    var la = window.la = window.la || [];
-    la.methods = ['pageview', 'track', 'identify'];
-    la.factory = function(method) {
-        return function() {
-            var args = Array.prototype.slice.call(arguments);
-            args.unshift(method);
-            la.push(args);
-            return la;
-        };
-    };
-    for (var i = 0; i < la.methods.length; i++) {
-        var key = la.methods[i];
-        la[key] = la.factory(key);
-    }
-    la.load = function(key, id) {
-        var script = document.createElement('script');
-        script.async = true;
-        script.src = 'https://demodash.ct.ws/api.php?action=tracker';
-        var first = document.getElementsByTagName('script')[0];
-        first.parentNode.insertBefore(script, first);
-        la._apiKey = 'YOUR_API_KEY';
-        la._siteId = 'site_68e436b13753a';
-        la._endpoint = 'https://demodash.ct.ws/api.php';
-    };
-    la.SNIPPET_VERSION = '1.0.0';
-    la.load('YOUR_API_KEY', 'site_68e436b13753a');
-})();
+window.lumora=window.lumora||function(){(lumora.q=lumora.q||[]).push(arguments)};
+lumora('init', 'site_68e458294a505', 'la_e4438fac0afa35e5f7f14f51b6bd4a94');
+lumora('track', 'pageview');
 </script>
+<script async src='https://demodash.ct.ws/api.php?action=tracker'></script>
         
   </head>
 <body>
@@ -400,6 +376,7 @@
     </script>
 </body>
 </html>
+
 
 
 
