@@ -10,14 +10,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
-    <!-- Lumora Analytics -->
-<script src=".js"></script>
+   <!-- Lumora Analytics -->
 <script>
-window.lumora('init', 'site_68e559cbebafe', 'key_23160ecf181864b11e9481994416933d', 'https://demodash.ct.ws/api.php');
+window.lumora = window.lumora || function() {
+    (window.lumora.q = window.lumora.q || []).push(arguments);
+};
 </script>
-<noscript>
-<img src="https://demodash.ct.ws/api.php?track=1&site_id=site_68e559cbebafe&page_url=noscript&referrer=noscript" alt="" style="display:none;" />
-</noscript>
+<script src="https://demodash.ct.ws/tracker.js"></script>
+<script>
+window.lumora('init', 'site_68e55c5dd3ec9', 'key_2baeec95cba2aa148ab646ba16747056', 'https://demodash.ct.ws/api.php');
+</script>
 <!-- End Lumora Analytics -->
 
   </head>
@@ -378,6 +380,7 @@ window.lumora('init', 'site_68e559cbebafe', 'key_23160ecf181864b11e9481994416933
     </script>
 </body>
 </html>
+
 
 
 
